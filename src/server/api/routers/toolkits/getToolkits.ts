@@ -18,7 +18,7 @@ export const getToolkits = protectedProcedure
         ? { isConnected: input.isConnected }
         : {}),
       limit: input.limit,
-      nextCursor: input.cursor,
+      cursor: input.cursor,
     });
 
     if (toolkitsResult.items.length === 0) {
